@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 06</title>
+</head>
+<body>
+    <h1> Quanto o funcionario ganhou de comição </h1>
+    <div id="resultado"></div>
+
+    <script>
+        let nome = prompt ( "Nome do funcionario ")
+        let qutvenda = Number(prompt("Quntidade que o funcinrio vendeu "))
+        let comicao = (qutvenda * Number(1))
+        let resul 
+
+        if( qutvenda <= 250){
+            resul= "Nome do funcionario:" + nome + "<br>" + " total da comição: " + "R$"+ comicao 
+        }
+        else if ( qutvenda >= 250 && 499){
+             comicao =(qutvenda* Number(1.5))
+             resul= "Nome do funcionario:" + nome + "<br>" + " total da comição: "+ "R$" + comicao 
+        }
+        else if ( qutvenda >= 500){
+            comicao =(qutvenda* Number(2))
+            resul= " Nome do funcionario "+ nome + "<br>" + " total da comição "+ "R$"+ comicao 
+        }
+        document.getElementById("resultado").innerHTML = resul;
+    </script>
+    
+</body>
+</html>

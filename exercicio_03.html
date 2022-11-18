@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 03</title>
+</head>
+<body>
+    <h1> Qual e seu pedido ?</h1>
+    <div id="resultado"></div>
+
+    <script>
+        let resul;
+        let pedido = prompt( "Qual o numero do deu pedido ?")
+
+        if ( pedido == 1){
+            resul = " big Super Sanduba " + "<br>" + " 2 hambúrgues ,queijo,batata frita e refrigerante " + "<br>" + " Preço de :  5,00 reias"
+        }
+        else if ( pedido == 2){
+            resul= "Quase super sanduba " + "<br>" + " 1 hambúrgues ,batata frita e refrigerante"+ "<br>" + " Preço de :  3,00 reias"
+        }
+        else if ( pedido == 3){
+            resul= " Mirradus Sanduba" + "<br>" + " 1 misto quente e refrigerante " + "<br>" + " Preço de :  1,00 reias"
+        }
+        document.getElementById("resultado").innerHTML = resul;
+    </script>
+
+
+    
+</body>
+</html>

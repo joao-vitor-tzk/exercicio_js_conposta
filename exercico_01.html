@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=  , initial-scale=1.0">
+    <title>Ativivdade 01</title>
+</head>
+<body>
+    <h1>Ativade função SE composta</h1>
+    <h2>Sober o  aluno e suas notas </h2>
+    <div id="resultado"></div>
+    <div id="notas"></div>
+
+    <script>
+        let nome= prompt ("Digite o nome do aluno ")
+        let nota1= Number (prompt ("Digite a primeira nota "))
+        let nota2= Number ( prompt ("Digite a segunda nota "))
+        let nota3= Number ( prompt ("Digite a treceira nota "))
+        let media =  ((nota1 + nota2 + nota3 )/3)
+        let resul;
+        let notas
+
+        
+
+        if(media >= 6){
+            resul= "O aluno " + nome + " foi aprovado com a meida "  + media;
+        }
+        else{
+            resul= "O aluno " + nome + " foi reprovado com a meida "  + media;
+        }
+        
+        document.getElementById("resultado").innerHTML = resul;
+
+
+        if( nota1 >= nota2  && nota2 >= nota3){
+            notas= "Notas" + "<br>" + nota1 +  "<br>" + nota2 + "<br>" + nota3
+
+        }
+        else if ( nota3 >= nota2 && nota2 >= nota1){
+            notas= "Notas" + "<br>" + nota3 +  "<br>" + nota2 + "<br>" + nota1
+        }
+        else if ( nota2 >= nota1 && nota1 >= nota3){
+            notas= "Notas" + "<br>" + nota2 +  "<br>" + nota1 + "<br>" + nota3
+        }
+        else if ( nota3 >= nota1 && nota1 >= nota2){
+            notas= "Notas" + "<br>" + nota3 +  "<br>" + nota1 + "<br>" + nota2
+        }
+        else if ( nota1 >= nota3 && nota3 >= nota2){
+            notas= "Notas" + "<br>" + nota1 +  "<br>" + nota3 + "<br>" + nota2
+        }
+        else if ( nota2 >= nota3 && nota3 >= nota1){
+            notas= "Notas" + "<br>" + nota2 +  "<br>" + nota3 + "<br>" + nota1
+        }
+        
+        document.getElementById("notas").innerHTML = notas;
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividae 2</title>
+</head>
+<body>
+    <h1> Ativade função SE composta</h1>
+    <h2> Quem e mais pesado ?</h2>
+    <div id="resultado"></div>
+    
+
+    <script>
+        let nome1 = prompt (" Nome da primeira pessoa")
+        let peso1 = Number (prompt ( " Peso da primeira pessoa "))
+        let nome2 = prompt ("Nome da segunda pessoa ")
+        let peso2 = Number (prompt (" Peso da segunda pessoa "))
+        let nome3 = prompt (" Nome da treceira pessoa ")
+        let peso3 = Number (prompt (" Peso da triceira pessoa "))
+        let resul;
+
+        
+
+        if( peso1 >= peso2 && peso2 >= peso3){
+            resul= "Nomes: " + nome1 + " Peso de : " + peso1 + "<br>" +nome2 + " Peso de : " + peso2 +" <br> " + nome3 +" Peso de :"+ peso3
+        }
+        else if(peso3 >= peso2 && peso2 >= peso1) {
+            resul= "Nomes: " + nome3 + " Peso de : " + peso3 + "<br>" +nome2 + " Peso de : " + peso2 +" <br> " + nome1 +" Peso de :"+ peso1
+        }
+        else if ( peso2 >= peso1 && peso1 >= pesso3){
+            resul= "Nomes: " + nome2 + " Peso de : " + peso2 + "<br>" +nome1 + " Peso de : " + peso1 +" <br> " + nome3 +" Peso de :"+ peso3
+        }
+        else if ( peso3 >= peso1 && peso1 >= peso2){
+            resul= "Nomes: " + nome3 + " Peso de : " + peso3 + "<br>" +nome1 + " Peso de : " + peso1 +" <br> " + nome2 +" Peso de :"+ peso2
+        }
+        else if ( peso2 >= peso3 && peso3 >= pesso1 ){
+            resul= "Nomes " + nome2 + " Peso de :" + peso2 + "<br>" + nome3 + "Peso de : " +peso3 + "<br>" + nome1 +" Peso de : " + peso1
+        }
+        else if ( peso1 >= peso3 && peso3 >= peso2){
+            resul= "Nomes " + nome1 + " Peso de :" + peso1 + "<br>" + nome3 + "Peso de : " +peso3 + "<br>" + nome2 +" Peso de : " + peso2
+        }
+        
+        
+        document.getElementById("resultado").innerHTML = resul;
+        
+        
+    </script>
+    
+</body>
+</html>
